@@ -1,0 +1,62 @@
+div{
+    width: 200px;
+	height: 30px;
+    padding: 10px;
+    background-color: #CCC;
+    margin: 25px;
+}
+.bordiArrotondati{
+    border: 2px solid black;
+    /* Primo numero curvatura asse orizzontale
+       secondo numero curvatura asse verticale */
+    border-radius: 10px/25px;
+}
+.ombra1{
+    /* Primo numero=ombra verso destra
+       Secondo numero=ombra verso basso
+       Terzo numero=colore ombra */
+    box-shadow: 5px 5px #333;
+}
+.ombra2{
+    box-shadow: -5px 5px #333;
+}
+.ombra3{
+    /* oggetto incassato con la luce che arriva da DIETRO - SX */
+	/* In tutti gli altri casi la luce arriva sempre da DAVANTI - SX */
+    box-shadow: inset 5px 5px #333;
+}
+.ombra4{
+    /* Il terzo parametro(facoltativo) indica il raggio
+       di sfumatura dell'ombra. 0=senza sfumatura */
+    box-shadow: 5px 5px 10px #333;
+}
+.ombra5{
+    box-shadow: 3px 3px 4px #333,
+                6px 6px 4px #3F3,
+                9px 9px 4px #33F;
+}
+.ombra6{
+    font-size: 20pt;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #333;
+}
+.ombra7{
+    box-shadow: 20px 15px 30px yellow,
+                -20px -15px 30px blue,
+                -20px 15px 30px lime,
+                20px -15px 30px red;
+}
+
+div:nth-of-type(9){
+   width:100px;
+   height:100px;
+   line-height:100px;
+   text-align:center;
+   /* 50% della larghezza orizzontale e 50% dell'altezza verticale */
+   border-radius:50%;
+}
+
+h1{
+    text-shadow: 4px 2px 2px #5bff23;
+    color: red;
+}
